@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.window{
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide{
+    position: relative;
+    width: 400vw;
+    height: 300px;
+    display: flex;
+    animation: slide infinite linear 6s;
+}
+
+.slide div{
+    width: 100vw;
+    height: 300px;
+}
+
+@keyframes slide{
+    0%{
+        left: 0vw;
+    }
+
+    23%{
+        left: 0vw;
+    }
+
+    33%{
+        left: -100vw;
+    }
+
+    56%{
+        left: -100vw;
+    }
+
+    66%{
+        left: -200vw;
+    }
+
+    90%{
+        left: -200vw;
+    }
+
+    100%{
+        left: -300vw;
+    }
+}
